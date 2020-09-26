@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Beer } from './Beer';
 
 @Component({
   selector: 'app-beer-list',
@@ -7,13 +8,37 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BeerListComponent implements OnInit {
 
-  beer = {
-    "name":"Negra Juerte",
-    "type": "Porter",
-    "price": 100,
-    "stock": 5,
-    "image": "assets/img/porter.jpeg"
-  }
+  beers: Beer[] = [
+    {
+      name: 'Bitter Call Saul',
+      type: 'IPA',
+      price: 180,
+      stock: 5,
+      image: 'assets/img/porter.jpeg',
+    },
+    {
+      name: 'Red Red Wine',
+      type: 'Barley Wine',
+      price: 200,
+      stock: 3,
+      image: 'assets/img/porter.jpeg',
+    },
+    {
+      name: 'Yellow Submarine',
+      type: 'Golden Ale',
+      price: 180,
+      stock: 0,
+      image: 'assets/img/porter.jpeg',
+    },
+    {
+      name: 'Yellow Submarine 2',
+      type: 'Golden Ale',
+      price: 200,
+      stock: 0,
+      image: 'assets/img/porter.jpeg',
+    },
+  ];
+
   constructor() { }
 
 

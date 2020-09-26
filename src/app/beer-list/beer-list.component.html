@@ -10,24 +10,12 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
+        <tr *ngFor="let beer of beers">
             <td><img [src]="beer.image" [alt]="beer.name"></td>
             <td>{{beer.name}}</td>
             <td>{{beer.type}}</td>
             <td>{{beer.price}}</td>
             <td>{{beer.stock}}</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>IPA</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Cream Stout</td>
-            <td></td>
-            <td></td>
         </tr>
     </tbody>
 </table>
