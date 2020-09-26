@@ -1,0 +1,33 @@
+<h1>Lista de cervezas</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Precio</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img [src]="beer.image" [alt]="beer.name"></td>
+            <td>{{beer.name}}</td>
+            <td>{{beer.type}}</td>
+            <td>{{beer.price}}</td>
+            <td>{{beer.stock}}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>IPA</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Cream Stout</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
