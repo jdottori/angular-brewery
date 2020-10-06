@@ -15,6 +15,7 @@ export class BeerListComponent implements OnInit {
       price: 180,
       stock: 5,
       image: 'assets/img/porter.jpeg',
+      clearance: false,
     },
     {
       name: 'Red Red Wine',
@@ -22,6 +23,7 @@ export class BeerListComponent implements OnInit {
       price: 200,
       stock: 3,
       image: 'assets/img/porter.jpeg',
+      clearance: true,
     },
     {
       name: 'Yellow Submarine',
@@ -29,6 +31,7 @@ export class BeerListComponent implements OnInit {
       price: 180,
       stock: 0,
       image: 'assets/img/porter.jpeg',
+      clearance: false,
     },
     {
       name: 'Yellow Submarine 2',
@@ -36,6 +39,7 @@ export class BeerListComponent implements OnInit {
       price: 200,
       stock: 0,
       image: 'assets/img/porter.jpeg',
+      clearance: false,
     },
   ];
 
