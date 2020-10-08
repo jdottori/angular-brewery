@@ -16,6 +16,7 @@ export class BeerListComponent implements OnInit {
       stock: 5,
       image: 'assets/img/porter.jpeg',
       clearance: false,
+      quantity: 0,
     },
     {
       name: 'Red Red Wine',
@@ -24,6 +25,7 @@ export class BeerListComponent implements OnInit {
       stock: 3,
       image: 'assets/img/porter.jpeg',
       clearance: true,
+      quantity: 0,
     },
     {
       name: 'Yellow Submarine',
@@ -32,6 +34,7 @@ export class BeerListComponent implements OnInit {
       stock: 0,
       image: 'assets/img/porter.jpeg',
       clearance: false,
+      quantity: 0,
     },
     {
       name: 'Yellow Submarine 2',
@@ -40,6 +43,7 @@ export class BeerListComponent implements OnInit {
       stock: 0,
       image: 'assets/img/porter.jpeg',
       clearance: false,
+      quantity: 0,
     },
   ];
 
@@ -49,4 +53,16 @@ export class BeerListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  upQuantity(beer: Beer): void {
+    if(beer.quantity < beer.stock)
+      beer.quantity++;
+  }
+
+  downQuantity(beer: Beer): void {
+    if(beer.quantity > 0)
+      beer.quantity--;
+  }
+  changeQuantity(event, beer: Beer): void {
+    console.log(event.key);
+  }
 }
