@@ -1,8 +1,11 @@
-h1 {
-    color: blue;
-}
-
 .clearance {
     border: 2px solid green;
     background: lightgreen;
+}
+td {
+    vertical-align: middle;
+}
+
+input {
+    max-width: 40px;
 }
